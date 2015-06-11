@@ -34,6 +34,8 @@ set -eu
 # move hidden files too, just in case
 shopt -s dotglob
 
+source $BP_DIR/bin/phalcon
+
 STACK=${STACK:-cedar} # Anvil has none
 BUILD_DIR=$1
 CACHE_DIR=$2/php
